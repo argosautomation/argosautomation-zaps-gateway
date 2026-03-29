@@ -1,0 +1,80 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+/backend/gateway
+/backend/keymgr
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sql.backup
+/backups/*.sql
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+*.test
+*.out
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker
+docker-compose.override.yml
+
+# Frontend cache
+.cache/
+.parcel-cache/
+
+# Misc
+*.bak
+*.backup
+.vercel
+
+# Internal deployment docs (contains server IPs and credentials)
+DEPLOYMENT.md
+
+# Deploy scripts (contain server IPs, SSH paths, infrastructure details)
+deploy.sh
+deploy-prod.sh
+scripts/setup_prod_oauth.sh
+
+# Test scripts (may contain hardcoded API keys)
+backend/stress_test.sh
+redaction_stress_test.py
+security_scan_report.html
+backend/zaps
+backend/zaps-gateway
